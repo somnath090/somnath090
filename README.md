@@ -1,4 +1,6 @@
-Find WI123 replace with ${#Project#hotelCode} in the below JSON and JSON minify below JSON
+Find WI123 replace with ${#Project#hotelCode} in the below JSON and
+JSON minify below JSON and
+Find " replace with \"
 {
   "messageTimestamp": "2025-01-23T16:28:10.086Z",
   "eventMessageType": "SUPER_ENRICHED_PROPERTY_CONTRACT_STATUS_CHANGE",
@@ -237,5 +239,5 @@ Find WI123 replace with ${#Project#hotelCode} in the below JSON and JSON minify 
   "choiceRevenueManagerResourceUUID": "",
   "isChoiceRevenueManagerThePropertyRevenueManager": false
 }
-Find " replace with \"
+
 
