@@ -1,0 +1,7 @@
+Add groovy script assertions to "Hotel-legal-Processer-Kafka-service-readyapi-project" file under test case "postKafka-PROPERTY_CHANGES_ALL NEW proprty"
+for "getHotel(HDS) -  Validate hotel created" step response to validate below values are similar to "POST - PROPERTY_CHANGES_ALL message" raw request
+geoCodeLongitude
+geoCodeLatitude
+postalCode
+addressLine1
+propertyCode
