@@ -1,4 +1,4 @@
-Write a groovy script to validate if hotelStatus = suspended store the hotel id to readyAPI project property level for below xml response
+Write a groovy script to validate if hotelStatus = suspended store the hotel id to readyAPI project property level for below
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
    <S:Body>
       <ns0:getHotelResponse xmlns:ns0="http://www.choicehotels.com/schema/v6/dist/msg" xmlns:ns1="http://www.choicehotels.com/schema/v6/common/cdm" xmlns:ns2="http://www.choicehotels.com/schema/v6/dist/cdm" xmlns:ns13="http://www.choicehotels.com/schema/v6/dist/evt" xmlns:ns3="http://www.choicehotels.com/schema/v6/support/cdm" xmlns:ns4="http://www.choicehotels.com/schema/v6/guest/cdm">
