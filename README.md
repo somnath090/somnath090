@@ -1,13 +1,4 @@
-As a developer,
+The system should allow the addition of the "SSAW" brand through the Hotel Tag V1 Service interface.
 
- I want to create default amenities for the new Brand - SSAW in the HDS database
+The new brand should be visible in the list of available brands for tagging hotels.
 
- so that users can have a standardized set of amenities available for selection in Propel.
-
-Context:
-
-Default amenities will need to be added to AMENITY_TAG table in HDS DB.
-
-Acceptance Criteria
-
-The system should allow the creation of default amenities that can be easily displayed for users in Propel. 
