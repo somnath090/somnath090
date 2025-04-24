@@ -1,1 +1,1 @@
-The system should allow the creation of default amenities from HDS UI for new Brand - Stopover  such that can be easily displayed for users in Propel. 
+The system should allow the creation of default amenities with aminity code BUSC,SECD and FWHI and aminity description  Business center, All exterior doors,Free Hi-Spd Wireless respectively from HDS UI for new Brand -  SSAW  such that can be easily displayed for users in Propel. 
