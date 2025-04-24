@@ -1,1 +1,1 @@
-The new brand with BrandCode SS BrandDescription Stopover should be accessible through the getHotel service of HDS api , HDS UI and Propel UI for any Hotel code
+The system should allow the creation of default amenities from HDS UI for new Brand - Stopover  such that can be easily displayed for users in Propel. 
