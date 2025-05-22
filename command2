@@ -4,5 +4,5 @@ geoCodeLatitude
 postalCode
 addressLine1
 propertyCode
-for "getHotel(HDS) -  Validate hotel created" step response is equal to raw request test step "POST - PROPERTY_CHANGES_ALL message"
+for "getHotel(HDS) -  Validate hotel created" step response is equal to raw request from value field for test step "POST - PROPERTY_CHANGES_ALL message"
 
