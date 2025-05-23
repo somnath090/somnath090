@@ -1,8 +1,16 @@
-Add groovy script assertions to validate below values 
+Add groovy script assertions to validate below minify json values 
 geoCodeLongitude
 geoCodeLatitude
 postalCode
 addressLine1
 propertyCode
-for "getHotel(HDS) -  Validate hotel created" step response is equal to raw request from value field for test step "POST - PROPERTY_CHANGES_ALL message"
+for raw request from value field for test step "POST - PROPERTY_CHANGES_ALL message"
+is 
+equal to below xml values 
+longitude
+latitude
+postalCode
+line1
+hotelId
+for test step "getHotel(HDS) -  Validate hotel created"
 
