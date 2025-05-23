@@ -4,7 +4,7 @@ geoCodeLatitude
 postalCode
 addressLine1
 propertyCode
-for raw request from value field for test step "POST - PROPERTY_CHANGES_ALL message"
+from "value" field of raw request of test step "POST - PROPERTY_CHANGES_ALL message"
 is 
 equal to below xml values 
 longitude
@@ -12,5 +12,6 @@ latitude
 postalCode
 line1
 hotelId
-for test step "getHotel(HDS) -  Validate hotel created"
+of test step "getHotel(HDS) -  Validate hotel created" response
+
 
