@@ -1,10 +1,10 @@
-Add groovy script assertions to validate below minify json values 
+Add groovy script assertions to validate below minify json's values field
 geoCodeLongitude
 geoCodeLatitude
 postalCode
 addressLine1
 propertyCode
-from "value" field of raw request of test step "POST - PROPERTY_CHANGES_ALL message"
+from "value" field of raw jSON request of test step "POST - PROPERTY_CHANGES_ALL message"
 is 
 equal to below xml values 
 longitude
