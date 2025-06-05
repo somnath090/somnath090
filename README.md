@@ -1,4 +1,4 @@
-Groovy script to assertion to validate values of longitude,latitude,line1 and postalCode for ReadyAPI test step "getHotel(HDS) -  Validate hotel created" matches with geoCodeLongitude,geoCodeLatitude addressLine1, and postalCode for ReadyAPI test step "postKafka-PROPERTY_CHANGES_ALL NEW proprty"
+Groovy script to assertion to get the values of longitude,latitude,line1 and postalCode for ReadyAPI test step "getHotel(HDS) -  Validate hotel created" and get the values of geoCodeLongitude,geoCodeLatitude addressLine1, and postalCode for ReadyAPI test step "postKafka-PROPERTY_CHANGES_ALL NEW proprty" matches correctly
 
 ReadyAPI test step "postKafka-PROPERTY_CHANGES_ALL NEW proprty"
 raw request : POST http://testdataapi-testops-chi-qa.sharedev.cloud.chotel.com/api/kafka/topic/z360-prop-api-sys-v2-qa/message HTTP/1.1
