@@ -1,4 +1,4 @@
-Groovy script assertion to get the values of longitude,latitude, line1 and postalCode from ReadyAPI test step "getHotel(HDS) -  Validate hotel created" response mtches with values geoCodeLongitude,geoCodeLatitude,addressLine1,postalCode of project property level
+Groovy script assertion to get the values of longitude,latitude, line1 and postalCode from ReadyAPI test step "getHotel(HDS) -  Validate hotel created" response mtches with values geoCodeLongitude,geoCodeLatitude,addressLine1,postalCode of project level property
 
 ReadyAPI test step "getHotel(HDS) -  Validate hotel created" response
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
