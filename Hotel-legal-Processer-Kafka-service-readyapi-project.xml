@@ -27,9 +27,12 @@
         <con:settings/>
         <con:parameters/>
         <con:request name="Request 1" id="c9326f50-56e3-408e-8df8-bdcaa3767896" mediaType="application/json" postQueryString="false">
-          <con:settings/>
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
           <con:endpoint>http://testdataapi-testops-chi-qa.sharedev.cloud.chotel.com</con:endpoint>
           <con:request/>
+          <con:originalUri>http://testdataapi-testops-chi-qa.sharedev.cloud.chotel.com/api/kafka/topic/topicName/message</con:originalUri>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
@@ -9119,7 +9122,7 @@ declare namespace ns1='http://www.choicehotels.com/schema/v6/common/cdm';
             <con:request>{
     "brokerUrl" : "z360-kafka-qa.frandev.cloud.chotel.com:9092",
     "key" : "${#Project#propertyNew}",
-    "value" :"{\"messageTimestamp\":\"2025-01-24T21:18:03.801Z\",\"eventMessageType\":\"PROPERTY_CHANGES_ALL\",\"transactionUUID\":\"${#Project#trackingID}\",\"eventReplayId\":1840444,\"propertyUUID\":\"a03PB0000091CrZYAU\",\"propertyCode\":\"${#Project#propertyNew}\",\"name\":\"WI122 Salt Lake City\",\"fullName\":\"Park Inn by Radisson, by Radisson, Salt Lake City Airport\",\"createdDatetime\":\"2024-03-15T17:07:43.000Z\",\"lastModifiedDatetime\":\"2025-01-24T21:18:00.000Z\",\"deleted\":false,\"propertyEmailAddress\":\"PD_UT320@parkinnamericas.com\",\"innboxPropertyEmail\":\"WI122@stayatchoice.com\",\"externalPropertyCode\":\"\",\"secondaryExternalPropertyCode\":\"\",\"hotelAddress\":{\"addressLine1\":\"${#Project#addr} North W Temple Street\",\"addressLine2\":\"\",\"addressLine3\":\"\",\"city\":\"Salt Lake City\",\"stateOrProvinceCode\":\"US-UT\",\"postalCode\":\"84116\",\"county\":\"\",\"countryCode\":\"US\"},\"mailingAddress\":{\"addressLine1\":\"${#Project#addr} North W Temple Street\",\"addressLine2\":\"\",\"city\":\"Salt Lake City\",\"stateOrProvinceCode\":\"US-UT\",\"postalCode\":\"${#Project#pin}\",\"countryCode\":\"US\"},\"geoLocation\":{\"locationMethod\":\"MAP\",\"locationVerifiedFlag\":false,\"geoCodeLatitude\":${#Project#latln}.7723221,\"geoCodeLongitude\":-${#Project#latln}.9481882},\"propertyManagementCompanyUUID\":\"001PB00000CZUabYAH\",\"propertyManagementCompanyCode\":\"GLX\",\"propertyManagementCompanyName\":\"Galaxy Hotels Group\",\"controllingOfficeUUID\":\"001PB00000CZUqjYAH\",\"controllingOfficeCode\":\"GLXCO\",\"controllingOfficeName\":\"Galaxy Hotels Group (CO)\",\"masterFranchisorUUID\":null,\"masterFranchisorCode\":null,\"masterFranchisorName\":null,\"franchisePrimaryContactAccountUUID\":null,\"franchisePrimaryContactAccountName\":null,\"buildingCapacity\":{\"floors\":1,\"guestRooms\":104,\"meetingRooms\":null},\"buildingAmenities\":{\"liquorOnPremises\":false,\"foodAndBeverage\":false,\"lounges\":null,\"outdoorPools\":null,\"indoorPools\":null,\"fitnessCenter\":false,\"laundryCenter\":false,\"corridorType\":\"Exterior\"},\"localAmenities\":{\"militaryBase\":null,\"medicalFacilities\":null,\"arenas\":null,\"universities\":null,\"otherAmenities\":null},\"hotelManagement\":{\"generalManagerName\":\"Katie Gallegos\",\"additionalGeneralManagerEmail\":\"\",\"salesManagerName\":\"\"},\"travelAgentCommission\":{\"percentage\":10.0,\"enabled\":true},\"locationCode\":\"\",\"operationalLocationCode\":\"D\",\"firstOpenDate\":\"2024-07-26\",\"yearBuilt\":\"1978\",\"reportingLocationCode\":\"D\",\"fax\":null,\"phone\":\"(385) 355-3345\",\"STRMarketCode\":\"490100\",\"STRTractCode\":\"490102\",\"STRLocationCode\":\"ARPT\",\"reservationStatus\":\"\",\"status\":\"Pending\",\"effectiveContract\":{\"contractUUID\":\"a0GPB0000013Jn72AE\",\"effectiveContractFlag\":true,\"contractId\":\"0000044744\",\"contractStatus\":\"TERM\",\"contractSubStatus\":\"\",\"effectiveTerminationDate\":\"2025-01-24\",\"legalSecName\":\"by Radisson, Salt Lake City Airport\"},\"propertyManagementSystemName\":\"\",\"pointOfSaleDescription\":\"\",\"rateManagementSystemName\":\"\",\"crsIntegrationName\":\"\",\"channelManagerName\":\"\",\"vanityWebsiteURL\":\"\",\"isBookingcomDirectConnected\":false,\"isExpediacomDirectConnected\":false,\"isChoiceBookingWidgetConnected\":false,\"choiceRMLevelName\":\"\",\"isChoiceRMTrial\":false,\"choiceRMStartDate\":null,\"choiceRMEndDate\":null,\"revenueManagementSystemName\":\"\",\"rmsStartDate\":null,\"rmReportingSolutionName\":\"\",\"choiceRevenueManagerResourceUUID\":\"\",\"isChoiceRevenueManagerThePropertyRevenueManager\":false}"
+    "value" :"{\"messageTimestamp\":\"2025-01-24T21:18:03.801Z\",\"eventMessageType\":\"PROPERTY_CHANGES_ALL\",\"transactionUUID\":\"${#Project#trackingID}\",\"eventReplayId\":1840444,\"propertyUUID\":\"a03PB0000091CrZYAU\",\"propertyCode\":\"${#Project#propertyNew}\",\"name\":\"WI122 Salt Lake City\",\"fullName\":\"Park Inn by Radisson, by Radisson, Salt Lake City Airport\",\"createdDatetime\":\"2024-03-15T17:07:43.000Z\",\"lastModifiedDatetime\":\"2025-01-24T21:18:00.000Z\",\"deleted\":false,\"propertyEmailAddress\":\"PD_UT320@parkinnamericas.com\",\"innboxPropertyEmail\":\"WI122@stayatchoice.com\",\"externalPropertyCode\":\"\",\"secondaryExternalPropertyCode\":\"\",\"hotelAddress\":{\"addressLine1\":\"${#Project#addr} North W Temple Street\",\"addressLine2\":\"\",\"addressLine3\":\"\",\"city\":\"Salt Lake City\",\"stateOrProvinceCode\":\"US-UT\",\"postalCode\":\"84116\",\"county\":\"\",\"countryCode\":\"US\"},\"mailingAddress\":{\"addressLine1\":\"${#Project#addr} North W Temple Street\",\"addressLine2\":\"\",\"city\":\"Salt Lake City\",\"stateOrProvinceCode\":\"US-UT\",\"postalCode\":\"${#Project#pin}\",\"countryCode\":\"US\"},\"geoLocation\":{\"locationMethod\":\"MAP\",\"locationVerifiedFlag\":false,\"geoCodeLatitude\":${#Project#latln}.772322,\"geoCodeLongitude\":-${#Project#latln}.948188},\"propertyManagementCompanyUUID\":\"001PB00000CZUabYAH\",\"propertyManagementCompanyCode\":\"GLX\",\"propertyManagementCompanyName\":\"Galaxy Hotels Group\",\"controllingOfficeUUID\":\"001PB00000CZUqjYAH\",\"controllingOfficeCode\":\"GLXCO\",\"controllingOfficeName\":\"Galaxy Hotels Group (CO)\",\"masterFranchisorUUID\":null,\"masterFranchisorCode\":null,\"masterFranchisorName\":null,\"franchisePrimaryContactAccountUUID\":null,\"franchisePrimaryContactAccountName\":null,\"buildingCapacity\":{\"floors\":1,\"guestRooms\":104,\"meetingRooms\":null},\"buildingAmenities\":{\"liquorOnPremises\":false,\"foodAndBeverage\":false,\"lounges\":null,\"outdoorPools\":null,\"indoorPools\":null,\"fitnessCenter\":false,\"laundryCenter\":false,\"corridorType\":\"Exterior\"},\"localAmenities\":{\"militaryBase\":null,\"medicalFacilities\":null,\"arenas\":null,\"universities\":null,\"otherAmenities\":null},\"hotelManagement\":{\"generalManagerName\":\"Katie Gallegos\",\"additionalGeneralManagerEmail\":\"\",\"salesManagerName\":\"\"},\"travelAgentCommission\":{\"percentage\":10.0,\"enabled\":true},\"locationCode\":\"\",\"operationalLocationCode\":\"D\",\"firstOpenDate\":\"2024-07-26\",\"yearBuilt\":\"1978\",\"reportingLocationCode\":\"D\",\"fax\":null,\"phone\":\"(385) 355-3345\",\"STRMarketCode\":\"490100\",\"STRTractCode\":\"490102\",\"STRLocationCode\":\"ARPT\",\"reservationStatus\":\"\",\"status\":\"Pending\",\"effectiveContract\":{\"contractUUID\":\"a0GPB0000013Jn72AE\",\"effectiveContractFlag\":true,\"contractId\":\"0000044744\",\"contractStatus\":\"TERM\",\"contractSubStatus\":\"\",\"effectiveTerminationDate\":\"2025-01-24\",\"legalSecName\":\"by Radisson, Salt Lake City Airport\"},\"propertyManagementSystemName\":\"\",\"pointOfSaleDescription\":\"\",\"rateManagementSystemName\":\"\",\"crsIntegrationName\":\"\",\"channelManagerName\":\"\",\"vanityWebsiteURL\":\"\",\"isBookingcomDirectConnected\":false,\"isExpediacomDirectConnected\":false,\"isChoiceBookingWidgetConnected\":false,\"choiceRMLevelName\":\"\",\"isChoiceRMTrial\":false,\"choiceRMStartDate\":null,\"choiceRMEndDate\":null,\"revenueManagementSystemName\":\"\",\"rmsStartDate\":null,\"rmReportingSolutionName\":\"\",\"choiceRevenueManagerResourceUUID\":\"\",\"isChoiceRevenueManagerThePropertyRevenueManager\":false}"
 }</con:request>
             <con:originalUri>http://testdataapi-testops-chi-qa.sharedev.cloud.chotel.com/api/kafka/topic/z360-prop-api-sys-v2-qa/message</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="d5e78e7c-54c8-46ff-b095-14ea71edeacf" name="Valid HTTP Status Codes">
@@ -9128,27 +9131,38 @@ declare namespace ns1='http://www.choicehotels.com/schema/v6/common/cdm';
                 <codes>200</codes>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="Response SLA Assertion" id="b601c82b-7b90-425a-951f-cffaa1d0a0a0" name="Response SLA">
-              <con:configuration>
-                <SLA>200</SLA>
-              </con:configuration>
-            </con:assertion>
             <con:assertion type="GroovyScriptAssertion" id="39bcee60-571f-42f1-89da-0d40eb39aa04" name="Script Assertion">
               <con:configuration>
-                <scriptText>import groovy.json.JsonSlurper
+                <scriptText>def rawRequest = messageExchange.getRequestContent()
+def jsonSlurper = new groovy.json.JsonSlurper()
+def outerJson = jsonSlurper.parseText(rawRequest)
+def valueJsonStr = outerJson.value
 
-// JSON string
-String jsonString = context.expand( '${POST - SUPER_ENRICHED_PROPERTY message#RawRequest#$[\'value\']}' )
+// Unescape if necessary
+if (valueJsonStr instanceof String &amp;&amp; !valueJsonStr.startsWith("{")) {
+    valueJsonStr = groovy.json.StringEscapeUtils.unescapeJava(valueJsonStr)
+}
 
-// Parse JSON string
-def jsonSlurper = new JsonSlurper()
-def data = jsonSlurper.parseText(jsonString)
-log.info data
-// Get propertyCode value
-def propertyCode = data.propertyCode
-log.info propertyCode
-// Set propertyCode value to project level
-context.testCase.testSuite.project.setPropertyValue('propertyNew', propertyCode)</scriptText>
+def valueJson = jsonSlurper.parseText(valueJsonStr)
+
+// Extract from nested objects
+def geoCodeLongitude = valueJson.geoLocation?.geoCodeLongitude
+def geoCodeLatitude  = valueJson.geoLocation?.geoCodeLatitude
+def addressLine1     = valueJson.hotelAddress?.addressLine1
+def postalCode       = valueJson.hotelAddress?.postalCode
+
+// Log for debug
+log.info "geoCodeLongitude: ${geoCodeLongitude}"
+log.info "geoCodeLatitude: ${geoCodeLatitude}"
+log.info "addressLine1: ${addressLine1}"
+log.info "postalCode: ${postalCode}"
+
+// Set as properties
+def project = context.getTestCase().getTestSuite().getProject()
+project.setPropertyValue("geoCodeLongitude", geoCodeLongitude?.toString() ?: "")
+project.setPropertyValue("geoCodeLatitude", geoCodeLatitude?.toString() ?: "")
+project.setPropertyValue("addressLine1", addressLine1 ?: "")
+project.setPropertyValue("postalCode", postalCode ?: "")</scriptText>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -9219,6 +9233,37 @@ declare namespace ns1='http://www.choicehotels.com/schema/v6/common/cdm';
                 <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="5fe391d3-9c39-483d-902e-6adb91c7d63f" name="Script Assertion">
+              <con:configuration>
+                <scriptText>// Groovy script assertion for ReadyAPI test step "getHotel(HDS) - Validate hotel created"
+// This script compares longitude, latitude, line1, and postalCode from the response with corresponding expected properties
+
+// Parse the response as XML
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def responseXml = new XmlSlurper().parseText(context.response)
+
+// Extract actual values from the response
+def point = responseXml.'**'.find { it.name() == 'point' }
+def businessAddress = responseXml.'**'.find { it.name() == 'businessAddress' }
+
+def actualLongitude = point.@longitude.toString()
+def actualLatitude = point.@latitude.toString()
+def actualLine1 = businessAddress.'line1'.text()
+def actualPostalCode = businessAddress.'postalCode'.text()
+
+// Fetch expected values from test case properties (or test step properties as appropriate)
+def expectedLongitude = context.expand('${#Project#geoCodeLongitude}')
+def expectedLatitude = context.expand('${#Project#geoCodeLatitude}')
+def expectedLine1 = context.expand('${#Project#addressLine1}')
+def expectedPostalCode = context.expand('${#Project#postalCode}')
+
+// Assertion checks
+assert actualLongitude == expectedLongitude : "Longitude does not match. Expected: ${expectedLongitude}, Actual: ${actualLongitude}"
+assert actualLatitude == expectedLatitude : "Latitude does not match. Expected: ${expectedLatitude}, Actual: ${actualLatitude}"
+assert actualLine1 == expectedLine1 : "Line1 does not match. Expected: ${expectedLine1}, Actual: ${actualLine1}"
+assert actualPostalCode == expectedPostalCode : "PostalCode does not match. Expected: ${expectedPostalCode}, Actual: ${actualPostalCode}"</scriptText>
+              </con:configuration>
+            </con:assertion>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
@@ -9249,11 +9294,135 @@ declare namespace ns1='http://www.choicehotels.com/schema/v6/common/cdm';
           </con:request>
         </con:config>
       </con:testStep>
-      <con:properties/>
+      <con:properties>
+        <con:property>
+          <con:name>geoCodeLongitude</con:name>
+          <con:value>-78.9481882</con:value>
+        </con:property>
+        <con:property>
+          <con:name>geoCodeLatitude</con:name>
+          <con:value>96.7723221</con:value>
+        </con:property>
+        <con:property>
+          <con:name>addressLine1</con:name>
+          <con:value>76 North W Temple Street</con:value>
+        </con:property>
+        <con:property>
+          <con:name>postalCode</con:name>
+          <con:value>84116</con:value>
+        </con:property>
+      </con:properties>
       <con:reportParameters/>
     </con:testCase>
     <con:testCase id="746c8dfd-5bd8-435c-b451-ad1349ad8c53" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="postKafka-PROPERTY_CHANGES_ALL TERMINATED proprty" searchProperties="true" timeout="0">
       <con:settings/>
+      <con:testStep type="request" id="cc5e962d-8f9e-4b74-a319-93dbc5b56dff" name="getHotel(HDS) -  search terminated prop">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>HotelDistributionSoapBinding</con:interface>
+          <con:operation>getHotel</con:operation>
+          <con:request name="getHotel(HDS) -  search terminated prop" id="6ed8539b-bbe7-421e-9057-81d59ddaac25">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>${#Project#HDSENDPOINT}</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:msg="http://www.choicehotels.com/schema/v6/dist/msg" xmlns:cdm="http://www.choicehotels.com/schema/v6/common/cdm">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <msg:getHotel>
+         <msg:request>
+            <cdm:requestMessageHeader version="1" sequenceNumber="1">
+               <cdm:timeStamp>${#Project#timeStamp}</cdm:timeStamp>
+            </cdm:requestMessageHeader>
+            <cdm:hotelId>
+               
+            <cdm:id>AL013</cdm:id></cdm:hotelId>
+         </msg:request>
+      </msg:getHotel>
+      <msg1:getHotel xmlns:msg1="http://www.choicehotels.com/schema/v6/dist/msg"/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="Valid HTTP Status Codes" id="45a2ec3d-c423-4209-8489-c6212faf7ffb" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="SOAP Fault Assertion" id="ebdd61e3-08d3-4bd4-be65-1460945d14da" name="Not SOAP Fault"/>
+            <con:assertion type="XPath Match" id="69ccd0a6-ec92-4c75-b5a0-127a99fde1fa" name="Match content of [cmn:line1]">
+              <con:configuration>
+                <path>declare namespace dst='http://www.choicehotels.com/schema/v6/dist/cdm';
+declare namespace ns6='http://www.choicehotels.com/schema/v6/dist/msg';
+//ns6:getHotelResponse[1]/ns6:response[1]/dst:hotelDistribution[1]/dst:buildingCapacitySummary[1]/dst:guestRooms[1]</path>
+                <content>125</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="XPath Match" id="9f90e2fa-1fab-484a-a9fa-1327e11fbf54" name="XPath Match - hotel code">
+              <con:configuration>
+                <path>declare namespace ns2='http://www.choicehotels.com/schema/v6/dist/cdm';
+declare namespace ns0='http://www.choicehotels.com/schema/v6/dist/msg';
+declare namespace ns1='http://www.choicehotels.com/schema/v6/common/cdm';
+//ns0:getHotelResponse[1]/ns0:response[1]/ns2:hotelDistribution[1]/ns1:hotelReference[1]/ns1:hotelId[1]/ns1:id[1]</path>
+                <content>${#Project#propertyNew}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="f3ec929a-92b3-4d2e-a99b-9bb8d5d323cc" name="Script Assertion">
+              <con:configuration>
+                <scriptText>import com.eviware.soapui.support.XmlHolder
+
+// Get the raw response content
+   def responseContent = messageExchange.response.contentAsString
+   def responseXml = new XmlHolder(responseContent)
+   def hotelStatus = responseXml.getNodeValue("//hotelStatus")
+   def hotelId = responseXml.getNodeValue("//id")
+   // ReadyAPI project reference
+def project = context.testCase.testSuite.project
+// Validate and store the hotel ID if status is "Suspended"
+if (hotelStatus == 'Suspended') {
+    project.setPropertyValue('suspendedHotelId', hotelId)
+    log.info "Hotel status is 'Suspended'. Stored Hotel ID: ${hotelId}"
+} else {
+    log.info "Hotel status is not 'Suspended'."
+}</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:wsaConfig action="getHotel" mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+            <con:environmentSpec>
+              <con:entry environmentId="85ab9fa6-0169-4d73-8d01-a914c335f57b">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="7aa79c75-0aae-4877-991a-4831f886d4cc">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="4616e1b3-bc00-4528-a7d0-4d215fb2de82">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="4101a08c-af1b-41bb-9ac2-f42539ea0156">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="ca1b0d5d-339b-41fb-abf5-34b9e768e4de">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="679a36cf-96b3-4460-9a93-f7c45a64006b">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:request>
+        </con:config>
+      </con:testStep>
       <con:testStep type="restrequest" name="POST - PROPERTY_CHANGES_ALL message" id="3be1526c-f2c5-4220-a52b-6d31b2685802">
         <con:settings/>
         <con:config service="testDataAPI" resourcePath="/api/kafka/topic/{topicName}/message" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -10018,7 +10187,7 @@ declare namespace ns1='http://www.choicehotels.com/schema/v6/common/cdm';
     </con:property>
     <con:property>
       <con:name>HDSENDPOINT</con:name>
-      <con:value>http://hds-main-api-prod.distprod.cloud.chotel.com:8080/hds?wsdl</con:value>
+      <con:value>http://hds-main-api-qa.distdev.cloud.chotel.com:8080/hds?wsdl</con:value>
     </con:property>
     <con:property>
       <con:name>propCode</con:name>
@@ -10026,7 +10195,7 @@ declare namespace ns1='http://www.choicehotels.com/schema/v6/common/cdm';
     </con:property>
     <con:property>
       <con:name>propertyNew</con:name>
-      <con:value>CK262</con:value>
+      <con:value>CK653</con:value>
     </con:property>
     <con:property>
       <con:name>addr</con:name>
@@ -10039,6 +10208,22 @@ declare namespace ns1='http://www.choicehotels.com/schema/v6/common/cdm';
     <con:property>
       <con:name>latln</con:name>
       <con:value>${=(int)(Math.random()*100)}</con:value>
+    </con:property>
+    <con:property>
+      <con:name>geoCodeLongitude</con:name>
+      <con:value>-52.948188</con:value>
+    </con:property>
+    <con:property>
+      <con:name>geoCodeLatitude</con:name>
+      <con:value>76.772322</con:value>
+    </con:property>
+    <con:property>
+      <con:name>addressLine1</con:name>
+      <con:value>968 North W Temple Street</con:value>
+    </con:property>
+    <con:property>
+      <con:name>postalCode</con:name>
+      <con:value>84116</con:value>
     </con:property>
   </con:properties>
   <con:wssContainer/>
