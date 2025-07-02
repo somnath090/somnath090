@@ -1,72 +1,26 @@
-{
-  "votingStatus": "Approved",
-  "votingProcessLevel": null,
-  "votingInitiatedDatetime": "2023-06-08T20:18:50.000Z",
-  "votingInitatedByUserUUID": "0053u000004ULYbAAO",
-  "votingApprovedOnDatetime": "2023-07-10T15:41:13.000Z",
-  "terminationReason": null,
-  "terminatedAsOtherContractIsOpen": false,
-  "strategicDeal": false,
-  "servicesRvpResourceUUID": "a31PB0000004z4vYAA",
-  "salesVPResourceUUID": "a313u000000SIJNAA4",
-  "salesRvpResourceUUID": "a313u0000003tX7AAI",
-  "regionServicesUUID": "a3c3u000000WnMUAA0",
-  "regionSalesUUID": "a3c3u0000006a4oAAA",
-  "regionIOCUUID": "a3c3u0000006a2eAAA",
-  "propertyUUID": "a033u00001MJKWwAAP",
-  "propertyCode": "NCA41",
-  "product": {
-    "productUUID": "a0Q6A000006jwfJUAQ",
-    "productName": "Lodge",
-    "productCode": "LO",
-    "choiceClassId": "I"
-  },
-  "previousContractId": null,
-  "possession": false,
-  "nextOutDate": "2028-07-11",
-  "name": "NCA41-EL-LO-OPEN-0000042828",
-  "messageTimestamp": "2025-06-12T21:12:52.964Z",
-  "licenseeRepContactUUID": "0033u000022cTBDAA2",
-  "leveragedRepo": false,
-  "legalSecondaryName": "Asheboro",
-  "lastModifiedDatetime": "2025-06-12T21:12:52.000Z",
-  "firstOutDateTermPoint": 60,
-  "executedBillableRoomCount": 58,
-  "eventMessageType": "CONTRACT_CHANGES_ALL",
-  "effectiveTerminationDate": null,
-  "effectiveExecutionDate": "2023-07-11",
-  "effectiveDate": "2023-07-13",
-  "effectiveContractFlag": true,
-  "effectiveCommencementDate": "2023-07-11",
-  "dualBrandContractUUID": null,
-  "dualBrandContractId": null,
-  "dfdResourceUUID": "a313u0000003tX7AAI",
-  "deleted": false,
-  "dealUUID": "0063u00000MwwjIAAR",
-  "customerUUID": "a0I3u00000Q6ODeEAN",
-  "customerId": "NCA41-03",
-  "contractUUID": "a0G3u00001bTnM4EAK",
-  "contractTerminatedDatetime": null,
-  "contractSubStatus": null,
-  "contractStatus": "OPEN",
-  "contractId": "0000042828",
-  "cambriaCommissionType": null,
-  "brand": {
-    "chainId": "E",
-    "brandUUID": "a0F6A000004KvqTUAS",
-    "brandName": "Econo",
-    "brandCode": "EL"
-  },
-  "billableRooms": 58,
-  "averageDailyRate": null,
-  "areaDirectorResourceUUID": "a313u000004fXFwAAM",
-  "applicationType": "RELI",
-  "applicationDate": "2023-06-08",
-  "affiliationFee": 20000.0,
-  "eventReplayId": null,
-  "replayEventId": null,
-  "transactionUUID": "a4541616-9458-46ab-8699-9d6fe0532dec",
-  "eventDetailId": "9cd8c31e-60a9-4637-929b-5d4219b1285a",
-  "fieldsChanged": [],
-  "changeDetail": null
-}
+An error is currently being generated in Prop-EL at property MX241 when attempting to add an NDD room type with a decimal value in the "Total Area" field. The issue seems related to how Hotel Suite (HDS) handles the totalArea field — currently, it does not support decimal values.
+
+Temporary workaround: Rounding the value or leaving the field empty allows the entry to succeed.
+
+We need to determine:
+
+Whether the totalArea field in Hotel Suite (HDS) can safely support decimal values without affecting downstream systems or integrations.
+
+If downstream systems can accept decimal values, we can consider updating the backend to support it.
+
+If decimal support cannot be added, we should update the Prop-EL UI to restrict users from entering decimal values in the Total Area field.
+
+Scope of Investigation:
+
+Review HDS schema – confirm current handling of totalArea values.
+
+Trace downstream usage of the totalArea field:
+
+Validate whether any external or internal systems consume this field and whether they allow decimals.
+
+Identify any transformation or validation logic that could break.
+
+Assess potential frontend impact in Prop-EL if decimals are allowed vs. disallowed.
+
+Summarize the implications and recommend the best course of action.
+
