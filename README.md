@@ -1,10 +1,15 @@
 Description
 
-HCS errors were updated to include invalid master room type. This error now includes object trace. This is cosmetically undesirable, and the error should not have the object trace included. 
+As a developer, when a new property is created in the RSS system, 
+
+I want to ensure that the MLOS strategy defaults to ‘S’ (stay Through) so that the booking process is streamlined and consistency is maintained across all properties.
+
+Context
+
+The hotel legal processor service needs a change. This change will ensure that the MLOS strategy is set to ‘S’ (stay Through) by default when a property is created in the RSS system.
+
 Acceptance Criteria
 
-HCS master room type error message is sent in the response without the object trace.
-Steps to Reproduce
+MLOS strategy must default to ‘S’ (stay Through) when a new property is created in the RSS system.
 
-
-Call HCS update with invalid room type code. 
+The change should ensure consistency across all properties.
