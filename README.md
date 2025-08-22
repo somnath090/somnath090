@@ -1,15 +1,7 @@
-Description
+As a hotel maintenance user, 
 
-As a developer, when a new property is created in the RSS system, 
+I want to manage contact information for a hotel 
 
-I want to ensure that the MLOS strategy defaults to ‘S’ (stay Through) so that the booking process is streamlined and consistency is maintained across all properties.
+so that I can maintain accurate phone numbers, fax numbers, manager information, and communication details for distribution systems.
 
-Context
-
-The hotel legal processor service needs a change. This change will ensure that the MLOS strategy is set to ‘S’ (stay Through) by default when a property is created in the RSS system.
-
-Acceptance Criteria
-
-MLOS strategy must default to ‘S’ (stay Through) when a new property is created in the RSS system.
-
-The change should ensure consistency across all properties.
+The Contact section is part of the General tab in the Hotel Maintenance application and manages all contact-related information for hotels. This section handles phone numbers, fax numbers, manager details, and other communication information organized into logical groupings.
